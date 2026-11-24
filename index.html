@@ -62,10 +62,13 @@ td:last-child:before{content:'◆ ';color:var(--gold)}
 #contact .ph{font-family:Georgia,serif;font-size:clamp(2.2rem,6vw,4.4rem);color:var(--gold2);text-decoration:none;display:block;margin:14px 0;letter-spacing:.05em}
 footer{text-align:center;padding:24px;color:var(--mut);font-size:.8rem;border-top:1px solid var(--line)}
 @media(max-width:800px){nav a{display:none}.panel.act{grid-template-columns:1fr}section{padding:84px 6vw 30px}}
-#bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;background:#07090f;overflow:hidden}
-#bgfx:before{content:'';position:absolute;inset:-30px;background:var(--hero) center/cover no-repeat;filter:blur(5px) saturate(1.15);opacity:.8}
-#bgfx:after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(7,9,15,.30),rgba(7,9,15,.50))}
-section{background:rgba(7,9,15,.38)}
+#bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:linear-gradient(180deg,#0b1d3a 0%,#164a78 35%,#e0904f 58%,#1c7fa0 60%,#0a3556 100%)}
+#bgfx:before{content:'';position:absolute;left:50%;top:38%;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;background:radial-gradient(circle,rgba(255,226,150,.95) 0,rgba(255,190,110,.55) 28%,rgba(255,150,80,0) 68%);animation:sun 7s ease-in-out infinite alternate}
+#bgfx:after{content:'';position:absolute;left:0;right:0;bottom:0;height:62%;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0 60 C150 15 450 105 600 60 C750 15 1050 105 1200 60 V120 H0Z' fill='%23ffffff' fill-opacity='.16'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0 60 C150 15 450 105 600 60 C750 15 1050 105 1200 60 V120 H0Z' fill='%235fd0e0' fill-opacity='.30'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0 60 C150 15 450 105 600 60 C750 15 1050 105 1200 60 V120 H0Z' fill='%231e8fb8' fill-opacity='.50'/%3E%3C/svg%3E"),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0 60 C150 15 450 105 600 60 C750 15 1050 105 1200 60 V120 H0Z' fill='%230a4a74' fill-opacity='.70'/%3E%3C/svg%3E");background-repeat:repeat-x;background-size:1200px 120px,900px 100px,1500px 140px,1100px 90px;background-position:0 62%,0 78%,0 92%,0 100%;animation:sea 24s linear infinite}
+@keyframes sun{from{transform:translateY(-14px) scale(.96);opacity:.85}to{transform:translateY(14px) scale(1.06);opacity:1}}
+@keyframes sea{to{background-position:1200px 62%,-900px 78%,1500px 92%,-1100px 100%}}
+@media (prefers-reduced-motion:reduce){#bgfx:before,#bgfx:after{animation:none}}
+section{background:rgba(7,12,24,.55);backdrop-filter:blur(2px)}
 </style></head><body><div id="bgfx" aria-hidden="true"></div>
 <div id="bar"></div>
 <nav><img data-x="k" src="" alt=""><b>KING'S UNITED</b>
