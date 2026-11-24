@@ -20,7 +20,7 @@ section{padding:96px 8vw 40px;max-width:1300px;margin:auto}
 .eyebrow{color:var(--gold);letter-spacing:.2em;font-size:.78rem;text-transform:uppercase}
 h2{font-size:clamp(2rem,4vw,3.2rem);margin:6px 0 18px}
 .lead{color:var(--mut);max-width:760px;font-size:1.08rem}
-#hero{min-height:100vh;max-width:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}#hero:before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(7,9,15,.30),rgba(7,9,15,.62)),url(https://images.pexels.com/photos/32393942/pexels-photo-32393942.jpeg?auto=compress&cs=tinysrgb&w=1600) center/cover;z-index:-1;animation:zoom 28s ease-in-out infinite alternate}#hero>*{position:relative}#hero .logo{height:150px;margin-bottom:26px;border-radius:6px;box-shadow:0 0 60px rgba(216,178,106,.35)}
+#hero{min-height:100vh;max-width:none;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}#hero:before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(7,9,15,.30),rgba(7,9,15,.62)),var(--p32393942) center/cover;z-index:-1;animation:zoom 28s ease-in-out infinite alternate}#hero>*{position:relative}#hero .logo{height:150px;margin-bottom:26px;border-radius:6px;box-shadow:0 0 60px rgba(216,178,106,.35)}
 #hero h1{font-size:clamp(2.6rem,7vw,5.5rem);margin:10px 0}
 #hero .sub{letter-spacing:.3em;color:var(--gold2);font-size:.85rem}
 .btn{display:inline-block;margin-top:28px;padding:13px 30px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;border-radius:2px;letter-spacing:.1em;transition:.25s;background:none;cursor:pointer;font-size:.9rem}
@@ -64,10 +64,10 @@ footer{text-align:center;padding:24px;color:var(--mut);font-size:.8rem;border-to
 @media(max-width:800px){nav a{display:none}.panel.act{grid-template-columns:1fr}section{padding:84px 6vw 30px}}
 #bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:#07101c}
 #bgfx i{position:absolute;inset:0;opacity:0;background-size:cover;background-position:center;animation:fade 32s infinite}
-#bgfx i:nth-child(1){background-image:url(https://images.pexels.com/photos/12169315/pexels-photo-12169315.jpeg?auto=compress&cs=tinysrgb&w=1600);animation-delay:0s}
-#bgfx i:nth-child(2){background-image:url(https://images.pexels.com/photos/39591184/pexels-photo-39591184.jpeg?auto=compress&cs=tinysrgb&w=1600);animation-delay:8s}
-#bgfx i:nth-child(3){background-image:url(https://images.pexels.com/photos/39550243/pexels-photo-39550243.jpeg?auto=compress&cs=tinysrgb&w=1600);animation-delay:16s}
-#bgfx i:nth-child(4){background-image:url(https://images.pexels.com/photos/32393942/pexels-photo-32393942.jpeg?auto=compress&cs=tinysrgb&w=1600);animation-delay:24s}
+#bgfx i:nth-child(1){background-image:var(--p12169315);animation-delay:0s}
+#bgfx i:nth-child(2){background-image:var(--p39591184);animation-delay:8s}
+#bgfx i:nth-child(3){background-image:var(--p39550243);animation-delay:16s}
+#bgfx i:nth-child(4){background-image:var(--p32393942);animation-delay:24s}
 #bgfx:after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(7,12,24,.25),rgba(7,12,24,.45))}
 @keyframes fade{0%{opacity:0;transform:scale(1)}6%{opacity:1}25%{opacity:1}31%{opacity:0;transform:scale(1.1)}100%{opacity:0;transform:scale(1.1)}}
 @keyframes zoom{from{transform:scale(1)}to{transform:scale(1.1)}}
@@ -166,7 +166,7 @@ section{background:rgba(7,12,24,.58)}
 <footer>King's United Entertainment Company · Partnership Proposal 2026/2027 · Red Sea, Egypt</footer>
 
 <div id="lb"><img id="lbi" alt=""><div class="c"><button id="pv">‹</button><span id="lbn"></span><button id="nx">›</button><button id="x">Close</button></div></div>
-<script src="d1.js"></script><script src="d2.js"></script><script src="d3.js"></script><script src="d4.js"></script>
+<script src="d1.js"></script><script src="d2.js"></script><script src="d3.js"></script><script src="d4.js"></script><script src="d5.js"></script><script src="d6.js"></script><script src="d7.js"></script><script src="d8.js"></script><script>for(const k in PH)document.documentElement.style.setProperty("--p"+k,"url("+PH[k]+")")</script><!-- Background photos: Pexels (free license), ids 32393942, 12169315, 39591184, 39550243 -->
 <script>
 const P=n=>IMG[n];
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
