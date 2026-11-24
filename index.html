@@ -62,8 +62,10 @@ td:last-child:before{content:'◆ ';color:var(--gold)}
 #contact .ph{font-family:Georgia,serif;font-size:clamp(2.2rem,6vw,4.4rem);color:var(--gold2);text-decoration:none;display:block;margin:14px 0;letter-spacing:.05em}
 footer{text-align:center;padding:24px;color:var(--mut);font-size:.8rem;border-top:1px solid var(--line)}
 @media(max-width:800px){nav a{display:none}.panel.act{grid-template-columns:1fr}section{padding:84px 6vw 30px}}
-#bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60% 45% at 15% 0%,rgba(216,178,106,.08),transparent 60%),radial-gradient(50% 40% at 85% 100%,rgba(216,178,106,.06),transparent 65%),radial-gradient(45% 35% at 70% 25%,rgba(96,116,190,.05),transparent 60%)}
-#bgfx:after{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(233,230,223,.05) 1px,transparent 1.6px);background-size:26px 26px}
+#bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none;background:#07090f;overflow:hidden}
+#bgfx:before{content:'';position:absolute;inset:-30px;background:var(--hero) center/cover no-repeat;filter:blur(5px) saturate(1.15);opacity:.8}
+#bgfx:after{content:'';position:absolute;inset:0;background:linear-gradient(rgba(7,9,15,.30),rgba(7,9,15,.50))}
+section{background:rgba(7,9,15,.38)}
 </style></head><body><div id="bgfx" aria-hidden="true"></div>
 <div id="bar"></div>
 <nav><img data-x="k" src="" alt=""><b>KING'S UNITED</b>
